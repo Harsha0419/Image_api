@@ -7,6 +7,6 @@ import retrofit2.http.GET;
 
 public interface ApiService {
 
-    @GET("photos")
+    @GET("photos") // method
     Call<List<Image>> getImages();
 }

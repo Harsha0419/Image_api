@@ -57,10 +57,10 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
 
         public void bind(Image image) {
             RequestOptions requestOptions = new RequestOptions()
-                    .diskCacheStrategy(DiskCacheStrategy.ALL);
+                    .diskCacheStrategy(DiskCacheStrategy.ALL); // Optimization of code
 
             Glide.with(itemView)
-                    .load(image.getUrl())
+                    .load(image.getUrl()) // geturl method
                     .apply(requestOptions)
                     .into(imageView);
         }
